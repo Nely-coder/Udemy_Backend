@@ -5,6 +5,9 @@ import bcrypt from "bcrypt";
 import session from "express-session";
 import passport from "passport";
 import { Strategy } from "passport-local";
+import env from "dotenv";
+
+env.config();
 
 const app = express();
 const port = 3000;
